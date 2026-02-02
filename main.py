@@ -55,6 +55,8 @@ def draw():
         for bullet in bullets:
             bullet.draw()
 
+        screen.draw.text(f"Score: {count}", (10, 10), color="blue", fontsize=30)
+
     if mode == "menu":
         bg.draw()
         button_start.draw()
